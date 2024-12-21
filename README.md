@@ -7,8 +7,8 @@ Welcome to the **Customer Churn Prediction App**, a cutting-edge web application
 
 ## 🌟 Highlights
 - **Interactive UI**: Built using Streamlit for a smooth user experience.
-- **Deep Learning Model**: Powered by a trained TensorFlow model to make predictions with precision.
-- **Custom Preprocessing**: Encoders and scalers ensure your inputs are just as the model likes them.
+- **Deep Learning Models**: Choose between a pre-trained **TensorFlow** or **PyTorch** model for predictions.
+- **Custom Preprocessing**: Encoders and scalers ensure your inputs are just as the models expect.
 - **Real-World Dataset**: Developed using real-world churn data to deliver actionable insights.
 
 ---
@@ -36,7 +36,8 @@ Welcome to the **Customer Churn Prediction App**, a cutting-edge web application
 
 ### 📂 File Overview:
 - **`app.py`**: The main script that runs the Streamlit app.
-- **`model.h5`**: Pre-trained TensorFlow model for churn prediction.
+- **`tensorflow_model.h5`**: Pre-trained TensorFlow model for churn prediction.
+- **`pytorch_model.pth`**: Pre-trained PyTorch model for churn prediction.
 - **`standard_scaler.pkl`**: Scaler for standardizing numerical features.
 - **`label_encoder_gender.pkl`**: Encoder to transform gender into numerical format.
 - **`onehotencoder_geography.pkl`**: Encoder for geography feature.
@@ -47,7 +48,7 @@ Welcome to the **Customer Churn Prediction App**, a cutting-edge web application
 1. **Input**: User enters data through Streamlit UI.
 2. **Encoding**: Gender and Geography are encoded into numerical formats.
 3. **Scaling**: Numerical features are standardized.
-4. **Prediction**: Pre-processed input is fed into the model for prediction.
+4. **Prediction**: Pre-processed input is fed into the selected model for prediction.
 5. **Output**: Display results with churn probability.
 
 ### 📦 Dependencies:
@@ -55,6 +56,7 @@ Welcome to the **Customer Churn Prediction App**, a cutting-edge web application
 - `pandas`
 - `numpy`
 - `tensorflow`
+- `torch`
 - `scikit-learn`
 - `pickle`
 
@@ -104,3 +106,11 @@ This app is intended for educational purposes only. Predictions are based on his
 ## 🎉 Have Fun!
 Predict churn, analyze insights, and stay ahead of the curve. Cheers to smarter business decisions! 🥂
 
+---
+
+## PyTorch Version
+
+You can now use either the **TensorFlow** or **PyTorch** version of the churn prediction model.
+
+- The **TensorFlow** version (`tensorflow_model.h5`) is pre-trained using TensorFlow.
+- The **PyTorch** version (`pytorch_model.pth`) is pre-trained using PyTorch.
