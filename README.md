@@ -1,5 +1,5 @@
 
-# Crazy Cool ReadMe: Customer Churn Prediction App
+# Customer Churn Prediction App
 
 Welcome to the **Customer Churn Prediction App**, a cutting-edge web application designed to predict whether a customer is likely to churn using the power of machine learning and deep learning! 🚀
 
